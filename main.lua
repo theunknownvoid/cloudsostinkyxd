@@ -10049,7 +10049,7 @@ STOP PLS
 STOP PLS
 STOP PLS
 STOP PLS
-
+]]
 local alphabetlist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[{}]\|;:',./`~_+-="
 
 function changesign(msg)
@@ -10076,6 +10076,7 @@ for i=1,3 do --game:GetService('RunService').Heartbeat:Wait()
        changesign(genstring(5) .. "              sen made this LOLL XD")
     end
 end
+--[[
 STOP PLS
 STOP PLS
 STOP PLS
@@ -19751,3 +19752,4 @@ STOP PLS
 STOP PLS
 STOP PLS
 STOP PLS
+]]
