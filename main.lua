@@ -1,11 +1,7 @@
 local alphabetlist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[{}]\|;:',./`~_+-="
 
 function changesign(msg)
-    if AutoEquip then
-       if game.Players.LocalPlayer.Backpack:FindFirstChild('Sign') then
-          game.Players.LocalPlayer.Backpack:FindFirstChild('Sign').Parent = game.Players.LocalPlayer.Character
-       end
-    end
+    
     if game.Players.LocalPlayer.Character:FindFirstChild('Sign') then
        if game.PlaceId == 9181090030 then
           game:GetService("Players").LocalPlayer.Character.Sign.UpdateSign:FireServer(msg)
@@ -33,11 +29,21 @@ end
 if Mode == "Spike" then
    for i=1,4 do --game:GetService('RunService').Heartbeat:Wait()
        for i=1,500 do
+          if AutoEquip then
+             if game.Players.LocalPlayer.Backpack:FindFirstChild('Sign') then
+                game.Players.LocalPlayer.Backpack:FindFirstChild('Sign').Parent = game.Players.LocalPlayer.Character
+            end
+        end
           changesign(genstring(Lenght) .. "              sen made this LOLL XD")
        end
    end
 elseif Mode == "Permanent" then
    game:GetService('RunService').Heartbeat:Connect(function()
+        if AutoEquip then
+             if game.Players.LocalPlayer.Backpack:FindFirstChild('Sign') then
+                game.Players.LocalPlayer.Backpack:FindFirstChild('Sign').Parent = game.Players.LocalPlayer.Character
+            end
+        end
         for i=1,500 do
             changesign(genstring(Lenght) .. "              sen made this LOLL XD")
         end
