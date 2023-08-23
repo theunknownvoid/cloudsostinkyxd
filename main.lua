@@ -46,6 +46,17 @@ elseif Mode == "Permanent" then
                 game.Players.LocalPlayer.Backpack:FindFirstChild('Sign').Parent = game.Players.LocalPlayer.Character
             end
         end
-        changesign(genstring(Lenght) .. "              sen made this LOLL XD")
+        for i=1,100 do
+            changesign(genstring(Lenght) .. "              sen made this LOLL XD")
+        end
     end)
 end
+--
+--
+--
+--
+--
+--
+--
+--
+--
