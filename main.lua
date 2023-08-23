@@ -7,6 +7,8 @@ function changesign(msg)
           game:GetService("Players").LocalPlayer.Character.Sign.UpdateSign:FireServer(msg)
        elseif game.PlaceId == 4924922222 then
           game:GetService("Players").LocalPlayer.Character.Sign.ToolSound:FireServer("Sign", "SignWords", msg)
+       elseif game.PlaceId == 4924922222 then
+          game:GetService("Players").LocalPlayer.Character.Sign.ToolSound:FireServer("Sign", "SignWords", msg)
        end
     end
 end
@@ -44,8 +46,6 @@ elseif Mode == "Permanent" then
                 game.Players.LocalPlayer.Backpack:FindFirstChild('Sign').Parent = game.Players.LocalPlayer.Character
             end
         end
-        for i=1,500 do
-            changesign(genstring(Lenght) .. "              sen made this LOLL XD")
-        end
+        changesign(genstring(Lenght) .. "              sen made this LOLL XD")
     end)
 end
